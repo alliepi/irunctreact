@@ -1,3 +1,49 @@
 .App {
   text-align: center;
 }
+
+.tab-content {
+  border: 1px solid #ddd;
+  border-top: none;
+  padding: 10px;
+}
+
+.row-content {
+  padding: 50px 0;
+}
+
+.vertical-center {
+  padding: 50px;
+}
+
+.table-wrapper {
+  max-height: 100vh;
+  overflow: auto;
+  display: inline-block;
+}
+
+/*
+.carousel-caption{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background-color:  rgba(0, 0, 0, 0.25);
+    text-align: left;
+    padding: 20px;
+}
+*/
+.carousel-caption {
+  color: white;
+  text-align: center;
+  max-width: 300px;
+  right: 0;
+  top: 1px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  height: 100%;
+  left: auto; /*Added*/
+}
+
+footer {
+  padding: 20px 0;
+}
