@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import {Table} from 'reactstrap';
-import { RACES_2022 } from '../shared/races2022';
+
 class RaceTable extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            races: RACES_2022
+            races: this.props.races
         };
     }
 

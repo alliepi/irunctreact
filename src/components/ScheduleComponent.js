@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import RaceTable from './RaceTableComponent';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from 'reactstrap';
-
+import {RACES_2022} from '../shared/races2022';
+import {RACES_2021} from '../shared/races2021';
 
 class Schedule extends Component {
   constructor(props) {
@@ -9,7 +10,9 @@ class Schedule extends Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      activeTab: '1'
+      activeTab: '1',
+      races_2022: RACES_2022,
+      races_2021: RACES_2021
     };
   }
 
@@ -61,14 +64,14 @@ class Schedule extends Component {
                     <TabPane tabId="1">
                         <Row>
                             <Col sm="12">
-                                <RaceTable />
+                                <RaceTable races={this.state.races_2022} />
                             </Col>
                         </Row>
                     </TabPane>
                     <TabPane tabId="2">
                         <Row>
                             <Col sm="12">
-                                2021 Races Coming Soon!!
+                                <RaceTable races={this.state.races_2021} />
                             </Col>
                         </Row>
                     </TabPane>
